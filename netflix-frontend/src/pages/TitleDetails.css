@@ -1,0 +1,123 @@
+.details-page {
+  background-color: #141414;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.details-back {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  z-index: 150;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.details-back:hover {
+  background-color: rgba(0,0,0,0.85);
+}
+
+.details-hero {
+  height: 70vh;
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: flex-end;
+}
+
+.details-hero-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 100%);
+}
+
+.details-play-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.35);
+}
+
+.details-play-button {
+  background-color: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+}
+
+.details-play-button:hover {
+  background-color: white;
+}
+
+.details-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 42%; /* wide player like Netflix watch page */
+  background-color: black;
+}
+
+.details-video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  border: none;
+}
+
+.details-info {
+  padding: 30px 40px;
+  color: white;
+  max-width: 900px;
+}
+
+.details-title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  z-index: 1;
+  position: relative;
+}
+
+.details-meta {
+  display: flex;
+  gap: 15px;
+  color: #46d369;
+  font-size: 14px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.details-meta span.rating {
+  color: #ccc;
+}
+
+.details-overview {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin-bottom: 15px;
+}
+
+.details-genres {
+  font-size: 14px;
+  color: #999;
+}
+
+.details-loading {
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
